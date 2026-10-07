@@ -1,0 +1,26 @@
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+
+# --- sekrety (NIGDY do gita) ---
+.env
+.env.*
+!.env.example
+
+# --- backend (Maven) ---
+backend/target/
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# --- frontend (Node) ---
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+*.log
+
+# --- Claude Code: lokalne ustawienia każdego developera ---
+.claude/settings.local.json
+CLAUDE.local.md

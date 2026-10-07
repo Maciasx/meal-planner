@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: app-backend
+
+server:
+  port: ${PORT:8080}
+  shutdown: graceful
+  forward-headers-strategy: framework   # poprawne URL-e za reverse proxy (nginx)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true   # /actuator/health/liveness i /readiness (Docker/K8s)
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+logging:
+  level:
+    com.example.app: DEBUG
