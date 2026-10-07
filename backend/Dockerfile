@@ -11,8 +11,8 @@ RUN mvn -B -q package -DskipTests
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 RUN useradd --system --uid 10001 app
-COPY --from=build /src/target/app.jar app.jar
+COPY --from=build /src/target/meal-planner.jar meal-planner.jar
 USER app
 EXPOSE 8080
 ENV JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=75"
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/meal-planner.jar"]

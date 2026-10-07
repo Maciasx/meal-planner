@@ -1,4 +1,6 @@
 # Uruchomienie całości "jak na produkcji":  docker compose up --build
+name: meal-planner
+
 # Aplikacja: http://localhost:8080  (nginx serwuje React i proxuje /api do backendu)
 services:
   backend:

@@ -29,4 +29,4 @@ jobs:
       - run: npm test
       - run: npm run build
       - name: Docker image builds
-        run: docker build -t app-frontend:ci .
+        run: docker build -t meal-planner-frontend:ci .

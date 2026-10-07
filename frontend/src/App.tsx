@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <main className="container">
-      <h1>React + Spring Boot</h1>
+      <h1>Planer posiłków</h1>
       {error && <p className="error">Backend niedostępny: {error}</p>}
       {!error && !data && <p>Ładowanie…</p>}
       {data && (

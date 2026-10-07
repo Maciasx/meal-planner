@@ -2,8 +2,15 @@
 
 Kontekst projektu dla Claude Code. Czytany automatycznie na starcie każdej sesji — trzymaj go krótkim i aktualnym.
 
+## O projekcie
+**Meal Planner** — planer posiłków: przepisy (ze składnikami), plan na tydzień (przepis → dzień/posiłek),
+automatycznie generowana lista zakupów (suma składników z planu).
+
+Właściciel projektu uczy się Reacta (Springa zna). Przy pracy nad frontendem tłumacz decyzje
+i proponuj kolejne kroki, zamiast pisać za niego całe komponenty — chyba że wprost o to poprosi.
+
 ## Struktura (monorepo)
-- `backend/` — Spring Boot 4, Java 21, Maven. REST API pod prefiksem `/api/**`. Pakiet bazowy `com.example.app`.
+- `backend/` — Spring Boot 4, Java 21, Maven. REST API pod prefiksem `/api/**`. Pakiet bazowy `com.mealplanner`.
 - `frontend/` — React 19 + TypeScript + Vite. Wywołania API tylko przez `src/api/client.ts`.
 - W dev Vite proxuje `/api` → `localhost:8080`; na produkcji robi to nginx (`frontend/nginx.conf`). Nie dodawaj CORS — nie jest potrzebny.
 

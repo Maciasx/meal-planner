@@ -1,4 +1,6 @@
-# fullstack-app
+# Meal Planner 🥗
+
+Planer posiłków: przepisy, plan na tydzień i automatyczna lista zakupów.
 
 React (Vite + TypeScript) + Spring Boot 4 (Java 21) w jednym repozytorium (monorepo).
 

@@ -11,11 +11,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>app-backend</artifactId>
+    <groupId>com.mealplanner</groupId>
+    <artifactId>meal-planner-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>app-backend</name>
-    <description>Backend REST API (Spring Boot)</description>
+    <name>meal-planner-backend</name>
+    <description>Planer posiłków i lista zakupów — REST API</description>
 
     <properties>
         <java.version>21</java.version>
@@ -43,7 +43,7 @@
     </dependencies>
 
     <build>
-        <finalName>app</finalName>
+        <finalName>meal-planner</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

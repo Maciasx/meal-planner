@@ -1,6 +1,6 @@
 spring:
   application:
-    name: app-backend
+    name: meal-planner-backend
 
 server:
   port: ${PORT:8080}
@@ -25,4 +25,4 @@ spring:
 
 logging:
   level:
-    com.example.app: DEBUG
+    com.mealplanner: DEBUG

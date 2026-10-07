@@ -27,4 +27,4 @@ jobs:
       - name: Build & test
         run: mvn -B verify
       - name: Docker image builds
-        run: docker build -t app-backend:ci .
+        run: docker build -t meal-planner-backend:ci .
